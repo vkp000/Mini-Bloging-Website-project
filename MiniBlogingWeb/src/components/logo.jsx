@@ -1,8 +1,9 @@
 import React from 'react'
+import ramaba from '../assets/ramaba.jpg';
 
 function Logo({width = '100px'}) {
     return (
-        <div>Logo</div>
+        <img src={ramaba} alt="Logo" style={{ width }} />
     )
 }
 

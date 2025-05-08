@@ -18,15 +18,17 @@ function Login() {
       const session = await authService.login(data);
       if (session) {
         const userData = await authService.getCurrentUser();
-        if (userData) {
-          dispatch(authLogin(userData));
-          navigate("/");
-        }
+        if (userData) dispatch(authLogin(userData));        
+        navigate("/");
       }
     } catch (error) {
+      console.log("login.jsx : 28 error ");
+      
       setError(error.message);
     }
   };
+
+
   return (
     <div className="flex item-center justify-center w-full">
       <div
@@ -50,7 +52,7 @@ function Login() {
     {error&& <p className="text-red-600 mt-8 text-center">{error}</p>}
     <form onSubmit={handleSubmit(login)} className="mt-8">
         <div className="space-y-5">
-            <input
+            <Input
             label="Email:"
             placeholder="Enter your email"
             type="email"

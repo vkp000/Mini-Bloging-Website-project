@@ -10,6 +10,10 @@ export default function Post() {
     const { slug } = useParams();
     const navigate = useNavigate();
 
+    
+    
+    
+
     const userData = useSelector((state) => state.auth.userData);
 
     const isAuthor = post && userData ? post.userId === userData.$id : false;
@@ -32,12 +36,15 @@ export default function Post() {
         });
     };
 
+    const urrl = post && post.featuredImage ? appwriteService.getFilePreview(post.featuredImage).replace("preview", "view") : null;
+    // appwriteService.getFilePreview(post.featuredImage)?.replace("preview", "view"):null
+
     return post ? (
         <div className="py-8">
             <Container>
                 <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
                     <img
-                        src={appwriteService.getFilePreview(post.featuredImage)}
+                        src={urrl}
                         alt={post.title}
                         className="rounded-xl"
                     />
