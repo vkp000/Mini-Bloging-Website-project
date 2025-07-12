@@ -1,6 +1,17 @@
 # 📝 Mini Blogging Website
 
-A modern, minimalistic, full-stack **Mini Blogging Platform** built with **React 19**, **Vite**, **TailwindCSS**, **Appwrite**, and **Redux Toolkit**. Features include user authentication, blog post creation/editing, and a rich text editor powered by TinyMCE.
+A modern, minimalistic, full-stack **Mini Blogging Platform** powered by:
+
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS" width="40" height="40"/>
+  <img src="https://appwrite.io/images-ee/brand/logomark.png" alt="Appwrite" width="40" height="40"/>
+  <img src="https://redux.js.org/img/redux-logo-landscape.png" alt="Redux Toolkit" width="90" height="30"/>
+  <img src="https://seeklogo.com/images/T/tinymce-logo-4F4C99D1B2-seeklogo.com.png" alt="TinyMCE" width="40" height="40"/>
+</p>
+
+
 
 ---
 
